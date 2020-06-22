@@ -1,0 +1,10 @@
+## Interface:11304
+## Title: Classic EPGP Tooltip Override plugin
+## Author: Deathbaron
+## Version: 0.1
+## Dependencies: CEPGP
+## Notes: You can override GP value settings from sync and add modifier keys when to show the tooltip. Works with CEPGP version 1.12.16.Release.
+## SavedVariables: CEPGP_TooltipOverride_tooltips
+
+CEPGP_TooltipOverride.lua
+CEPGP_TooltipOverride_OptionsFrame.xml

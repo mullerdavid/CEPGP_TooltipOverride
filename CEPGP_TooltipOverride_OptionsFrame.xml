@@ -1,0 +1,47 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="CEPGP_TooltipOverride.lua"/>
+	<Frame name="CEPGP_TooltipOverride_options">
+		<Layers>
+			<Layer level="OVERLAY">
+				<FontString name="$parent_tooltips_text" inherits="GameFontNormal" text="Show the GP Value Tooltip" >
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parent">
+							<Offset><AbsDimension x="20" y="-20"/></Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="$parent_tooltips" inherits="UIDropDownMenuTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parent_tooltips_text">
+					<Offset><AbsDimension x="" y="-20"/></Offset>
+					</Anchor>
+				</Anchors>
+				
+               <Scripts>
+					<OnShow>
+						UIDropDownMenu_SetWidth(self, 180);
+						CEPGP_TooltipOverride_SetDropDown();
+					</OnShow>
+					<!--<OnEnter>
+						GameTooltip:SetOwner(self, "ANCHOR_TOPRIGHT");
+						GameTooltip:SetText("Sets when the GP Value tooltips to show up.");
+					</OnEnter>
+					<OnLeave>
+						GameTooltip:Hide();
+					</OnLeave>-->
+					<OnLoad>
+						UIDropDownMenu_Initialize(self, CEPGP_TooltipOverride_SetDropDown);
+					</OnLoad>
+               </Scripts>-->
+           </Button>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				CEPGP_TooltipOverride_LoadOptions(self);
+			</OnLoad>
+		</Scripts>
+	</Frame>
+</Ui>
