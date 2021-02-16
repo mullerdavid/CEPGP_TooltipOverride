@@ -35,7 +35,7 @@
 					<OnLoad>
 						UIDropDownMenu_Initialize(self, CEPGP_TooltipOverride_SetDropDown);
 					</OnLoad>
-               </Scripts>-->
+               </Scripts>
            </Button>
 		</Frames>
 		<Scripts>
