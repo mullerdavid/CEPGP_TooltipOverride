@@ -1,0 +1,8 @@
+## Interface:11306
+## Title: Classic EPGP Change of Mind plugin
+## Author: Deathbaron
+## Version: 0.1
+## Dependencies: CEPGP
+## Notes: You can change your response to loot if the option is enabled. Response window is not closed on the selected option. Works with CEPGP version 1.13.5.Release.
+
+CEPGP_ChangeOfMind.lua
